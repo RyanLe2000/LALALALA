@@ -60,7 +60,7 @@ else:
 # valid number"
 
 number = int(input("Please enter a number between 1 and 5: "))
-if number > 1 or < 5:
+if number > 1 or number < 5:
     print('your good')
 else:
     print('no')
