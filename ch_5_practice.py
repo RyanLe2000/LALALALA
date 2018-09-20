@@ -132,11 +132,10 @@ main5()
 
 # TODO 5.8 value returning functions
 # Complete the following program, remove the """  """ before testing
-"""
 def main6():
     print("This program will calculate your BMI")
-    height = float(input("What is your height in inches?  "))
-    weight = float(input("What is your weight in pounds"))
+    height = 6
+    weight = 5
     # TODO call the bmi function and assign the result to a variable named answer
     
     # TODO print the variable answer, make sure to format it to 1 decimal place
