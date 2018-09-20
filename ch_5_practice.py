@@ -9,22 +9,53 @@
 # TODO 5.2 - calling an existing function
 # beneath the following function, write the code to call it, remove the """ """ before testing
 
-
 def hello():
     print("Hello Sweetie!")
 
-
 # write the code to call the hello function on the next line
+hello()
 
 # TODO 5.2 - creating and calling a function
 # Write a function called joke that prints a joke on the screen
 # Call the function
+def line1():
+    print('knock knock')
+def line2():
+    print('whos there')
+def line3():
+    print('tom')
+def line4():
+    print('tom who?')
+def line5():
+    print('just let me in the damn room john I need to program')
 
+line1()
+line2()
+line3()
+line4()
+line5()
 
 # TODO 5.3 designing a program in functions
 # create a main function that will call separate functions that
 # print each line in a knock knock joke. Make sure to call main
 # as the last line of your code.
+
+def main1():
+    print('knock knock')
+def line2():
+    print('whos there')
+def line3():
+    print('tom')
+def line4():
+    print('tom who?')
+def line5():
+    print('just let me in the damn room john I need to program')
+
+line1()
+line2()
+line3()
+line4()
+line5()
 
 
 # TODO 5.4 local variables
@@ -37,6 +68,13 @@ def hello():
 # in a program, we are just adding the number after main to allow
 # us to write multiple short practice programs in this file.
 
+def main2():
+    name_var = int(input(' type opponents name '))
+    print('hello, my name is ', str(name_var))
+    get_name = int(input(' type your name '))
+    print('Hello', get_name)
+
+main2()
 
 # TODO 5.5 passing arguments to Functions
 # complete the code below to pass the my_number variable from
@@ -44,11 +82,10 @@ def hello():
 
 
 def main3():
-    my_number = 7
-    square(my_number)
+    num = 7
     
     
-def square(value):
+def square():
     squared_value = value * value
     print(squared_value)
     
@@ -63,8 +100,8 @@ main3()
 # variable / parameter names. Remove the """ """
 
 def main4():
-    num_two = 5
-    num_two = 7
+    one = 5
+    two = 7
     add()
     
     
@@ -73,52 +110,48 @@ def add():
     print(total)
 
 
-main4()
-
-
 
 # TODO 5.7 value returning functions
 # Add a statement importing the random library
 # Add the global constant PI with a value of 3.14 before the main5 function
 
-
+"""
 def main5():
-    r = (1,10)# TODO generate a random integer between 1-10, assign it to the variable r
+    r = # TODO generate a random integer between 1-10, assign it to the variable r
     r2 = r * r
     area(r2)
-
-
+    
+    
 def area(radius_squared):
-    my_area = area * area  # TODO insert the PI constant multiplied by the parameter here
+    my_area =  # TODO insert the PI constant multiplied by the parameter here
     print(format(my_area, ",.2f"))
-
-
+    
+    
 main5()
-
+"""
 
 # TODO 5.8 value returning functions
 # Complete the following program, remove the """  """ before testing
-
+"""
 def main6():
     print("This program will calculate your BMI")
     height = float(input("What is your height in inches?  "))
     weight = float(input("What is your weight in pounds"))
-
     # TODO call the bmi function and assign the result to a variable named answer
-
+    
     # TODO print the variable answer, make sure to format it to 1 decimal place
-
+    
     # TODO modify the bmi function to accept the height and weight
     # read the code to determine the parameter names
 def bmi():
     # BMI = (Weight in Pounds / (Height in inches x Height in inches)) x 703
     patient_bmi =  (weight_pounds / (height_inches * height_inches)) * 703
     # TODO send the patient_bmi value back to main6
-
+    
 
 main6()
 
-
+"""
 # TODO 5.9 the math module
 # import math
 # write a statement that uses the ceil function on the following variable
