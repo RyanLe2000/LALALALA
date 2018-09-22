@@ -1,20 +1,28 @@
 def main():
+    month_balance = monthly()
+    month_total = monthly()
+    yearly(month_balance)
+    yearly_total = yearly(month_balance)
+    m_name = monthly_balance(monthly())
+    y_name = yearly_total(monthly_balance())
+def monthly():
+        month = print(int(input("car loan month? ")))
+        car_month = print(int(input("insurance? ")))
+        car_gas = print(int(input("Gas? ")))
+        car_main = print(int(input("Maintanance? ")))
 
-    def monthly():
-    yearly(total)
+        monthly_total = format(str(month) + str(car_gas) + str(car_main) + str(car_month))
 
-    print(' Your monthly costs would be ' ,)
+        return monthly_total
 
-    def yearly(monthly_total):
+def yearly (monthly_balance):
+    yearly_add = monthly_balance * 12
+    return yearly_add
 
-        print(' your, yearly costs would be ' ,)
-
-monthly():
-Accumulate the total in a local variable
-Print the monthly costs on screen, formatted appropriately for money
-Pass the monthly cost to Function 2
-
-yearly(monthly_total):
-Accepts a float parameter
-Calculates yearly cost by multiplying the monthly cost by 12
-Displays the yearly cost on screen, formatted appropriately for money
+def monthly_balance (monthly):
+    print(' Your monthly costs would be ' + str(monthly_balance(monthly)))
+    return monthly_balance (monthly())
+def yearly_total (month_balance):
+      print(' your, yearly costs would be ' + str(yearly_total()))
+      return yearly_total
+main()
