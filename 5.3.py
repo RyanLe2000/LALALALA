@@ -10,19 +10,19 @@ def main():
     calc_average (51, 52, 53, 54, 55)
       print("your average score is ", ave)
     def score1():
-        score1 = int(input(" whats the first test score?))
-        return score1
+        score_1 = int(input(" whats the first test score?))
+        return score_1
     def score2():
-        score2 = int(input(" whats the second test score?))
-        return score2
+        score_2 = int(input(" whats the second test score?))
+        return score_2
     def score3():
-        score3 = int(input(" whats the third test score?))
-        return score3                 
+        score_3 = int(input(" whats the third test score?))
+        return score_3                 
     def score4():    
-        score4 = int(input(" whats the forth test score?))
-        return score4                  
+        score_4 = int(input(" whats the forth test score?))
+        return score_4                  
     def score5():
-        score5 = int(input(" whats the fidth test score?))
-        return score5                   
+        score_5 = int(input(" whats the fidth test score?))
+        return score_5                   
 main()                     
                            
