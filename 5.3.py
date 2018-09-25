@@ -1,14 +1,14 @@
 def main():
-    get input(score1 + score2 + score3 + score4 + score5  )
-    ave = calc_average(+1, +2, +3, +4, +5)
-    det_grade(ave)
-    calc_average (51, 52, 53, 54, 55)
-    print(" your first score is ", score1)
+     print(" your first score is ", score1)
     print(" your second score is ", score2)
     print(" your third score is ", score3)
     print(" your forth score is ", score4)
     print(" your fidth score is ", score5)
-    print("your average score is ", ave)
+    get input(score1 + score2 + score3 + score4 + score5  )
+    ave = calc_average(+1, +2, +3, +4, +5)
+    det_grade(ave)
+    calc_average (51, 52, 53, 54, 55)
+      print("your average score is ", ave)
     def score1():
         score1 = int(input(" whats the first test score?))
         return score1
