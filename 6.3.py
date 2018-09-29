@@ -1,12 +1,23 @@
-Use try and except statements
-Check for IO errors
-Check for value errors
+def main():
+    filename = 'numbers1.txt'
+try:
+    numbers_file = open(filename, 'r')
+    record = numbers_file.readline()
+    record = record.rstrip('\n')
+    while record != "":
+        print(record)
+        record = numbers_file.readline()
+        record = record.rstrip('\n')
+        try:
+            record = int(record)
+        except: ValueError:
+        print('this item isnt a number: ')
+        print("\t". record)
+        break
 
-There was non-numeric data in the file.
-Processing of the file has stopped.
-There were 5 numbers
-The total of all numbers was: 594
-The average of the numbers was: 118.80
+        numbers_file.close()
+        except IOError:
+            print('cannot find file: ' + filename)
 
-Download the links on canvas
 
+main()
