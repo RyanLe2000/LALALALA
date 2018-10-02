@@ -9,50 +9,63 @@
 # TODO 7.2 Lists
 # Create a list of days of the week, assign it to the variable days, remove """ """ to test
 
-"""
-days =
-"""
+days = ["Monday", "Tuesday", 'Wensday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+print(days)
 
 
 # Create a list with 5 items, set them all to 0, use the Repetition Operator ( * )
+items = ['bags', 'tags', 'rags', 'snags', 'toothpaste']
 
 
 # print the contents of your days list using the for operator
-
+for x in days:
+    print(x)
 
 # print the list item that holds the value Saturday from the days list by using it's index
-
+print(days[5])
 
 # set the size variable to hold the length of the list days using the len function
-
+print(len(days))
 # concatenate the two following lists together, storing the value in list3 - remove the """ """ to test
 
-"""
+
 list1 = [1, 3, 5, 7, 9]
 list2 = [2, 4, 6, 8, 10]
-list3 =
+list3 = list2 + list1
 print(list3)
-"""
+
 
 # TODO 7.3 List Slicing
 # Slice the list days to select from Monday through Friday, inclusive, and assign the new list to work_days
 # print work_days
+slice = days
+slice.remove("Saturday")
+slice.remove("Sunday")
+work_days = slice
+print(work_days)
 
 
 # TODO 7.4 Finding items in Lists with the in Operator
 # test to see if "Tue" is in the list days, print yes, Tue is in the list or no, Tue is not in the list
 
+if "Tue" in days:
+  print("Yes, 'apple' is in the fruits tuple")
+else:
+  print('its not on the list')
 
 # TODO 7.5 List Methods and Useful Built-in Functions
 # Complete the following code to append the last three months of the year to the list months. Remove
 # the """   """ to test, and print the contents of months
 
 months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"]
-
-
+months.append('October,'  + "'November,' " + "'December'")
+print(months)
+print(months[4])
 # get the index of "May" from the months list and print it on screen
 
 # sort list3 from the 7.2 exercise and print the results on screen
+list3.sort("1", '2', '3', '4', '5','6', '7', '8', '9', '10')
+print(list3)
 
 # reverse the order of list 3
 
