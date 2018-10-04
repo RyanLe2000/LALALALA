@@ -34,7 +34,6 @@ list2 = [2, 4, 6, 8, 10]
 list3 = list2 + list1
 print(list3)
 
-
 # TODO 7.3 List Slicing
 # Slice the list days to select from Monday through Friday, inclusive, and assign the new list to work_days
 # print work_days
@@ -60,11 +59,11 @@ else:
 months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"]
 months.append('October,'  + "'November,' " + "'December'")
 print(months)
-print(months[4])
+print(months[5])
 # get the index of "May" from the months list and print it on screen
 
 # sort list3 from the 7.2 exercise and print the results on screen
-list3.sort
+list3.sort['1','2','3','4','5','6','7','8','9','10'] 'I dont know how to sort'
 print(list3)
 
 # reverse the order of list 3
