@@ -64,37 +64,44 @@ print(months[4])
 # get the index of "May" from the months list and print it on screen
 
 # sort list3 from the 7.2 exercise and print the results on screen
-list3.sort("1", '2', '3', '4', '5','6', '7', '8', '9', '10')
+list3.sort
 print(list3)
 
 # reverse the order of list 3
-
-# delete the number 5 from list 3
+list3.reverse()
+print(list3)
 
 # print the maximum item from list 3
-
+print(list3.count)
 
 # TODO 7.6 Copying Lists
 # copy the list months to the variable months_of_the_year
 # print the values in months_of_the_year
 
+months_of_the_year = months.copy()
 
 # TODO 7.7 Processing lists
 # total the values in list3 and print the results
+values = list3 + list3
+print(list3)
 
-# get the average of values in list 3 and print the results
+count = list3.count
 
 # open the file states in read mode, read the contents of the file into the list states_list and print the
 # contents of states_list on screen
-
+states_list = open("states.txt", "r")
+print(states_list.read())
 
 # TODO 7.8 Two-Dimensional Lists
 # Create a two dimensional list that has the months of the year and the days in each month during a non leap year
 # print the contents of the list
 
-
+dim_list = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"]
+dem_list =["31","30","28","30","31","30","31","30","28","30","31","30"]
 # print just the values for index 3,0 and 3,1
+print(dim_list[3], dem_list[0])
+print(dim_list[3], dem_list[1])
 
 # TODO 7.9 Tuples
 # convert the months list to a tuple
-
+dim_list.change()
