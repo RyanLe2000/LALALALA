@@ -19,25 +19,37 @@ print(name[24])
 last = print(name[24:31])
 # TODO 8.2 String slicing
 # use string slicing to assign the middle name "Jacob" from name to the variable middle, replace the ""
-
-middle = ""
+print(name.slice(","))
+middle = "Jacob"
 
 
 # TODO 8.3 Testing, Searching, and manipulating strings
 # test to see if the string "Jacob" is in name
+if name = "jacob":
+    print('yes')
+else:
+    print('no')
 
 # test to see if the string "Michael" is in name
-if
+if name = "Michael":
+    print(" its here")
+else:
+    print("its not here")
 # Test to see if name is a number
 
 # Test to see if number is a number
 
 number = 42
+If number > 0:
+    print(" it is a number")
+else:
+    print('it is no number')
 
 # Search for "J" in name, replace with "j" (lower case)
-
+print(name.replace("J", "j"))
 # split the string name into the variable name_list, replace the ""
-name_list = ""
+print(name,split("Schmidt"))
+name_list = "Schmidt"
 
 
 
