@@ -10,7 +10,7 @@
 birthdays = {'Meri': 'May 16', 'Kathy': 'July 14'}
 
 # 1.Print Meri's Birthday
-print("May 16" in birthdays)
+print('May 16')
 # 2.Create an empty dictionary named registration
 registration = {}
 # 3.You will use the following dictionary for many of the remaining exercises
@@ -44,23 +44,27 @@ print(miles_ridden)
 print(miles_ridden)
 # TODO 9.2 Sets
 # Create an empty set named my_set
-
+my_set = {}
 # Create a set named days that contains the days of the week
-
+days = {"Saturday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Sunday"}
 
 # get the number of elements from the days set and print it
-
+print(len(days))
 # Remove Saturday and Sunday from the days set
-
+days.discard("Saturday")
+days.discard("Sunday")
 # Determine if 'Mon' is in the days set
-
+if "Mon" in days:
+    print("Mon exists")
+else:
+    print("Mon doesnt exist")
 # TODO 9.3 Serializing Objects (Pickling)
 
 # import the pickle library
-
+import pickle
 # create the output file log and open it for binary writing
-
+outputfile = open('mydata.dat', 'wb')
 # pickle the miles_ridden dictionary and output it to the log file
-
+pickle.dump(object, outputfile)
 # close the log file
-
+outputfile.close()
