@@ -10,7 +10,7 @@
 birthdays = {'Meri': 'May 16', 'Kathy': 'July 14'}
 
 # 1.Print Meri's Birthday
-print('May 16')
+print(birthdays['Meri'])
 # 2.Create an empty dictionary named registration
 registration = {}
 # 3.You will use the following dictionary for many of the remaining exercises
