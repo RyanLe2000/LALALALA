@@ -16,6 +16,8 @@ menu that lets the user look up a person's email address, add a new name and ema
   'pickle the dictionary and save it to a file when the user exits the program.'
   ' Each time the program starts, it should retrieve the dictionary from the file '
    'and unpickle it.
+
+
 import pickle
 def main():# declare variables
     customers = get_info()
@@ -30,7 +32,8 @@ def main():# declare variables
         delete(customers)
     elif choice == "quit":
         save_file(customers)
-        else:print("not valid entry")
+     else:
+        print("not valid entry")
             menu()
             
             
