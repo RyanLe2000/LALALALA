@@ -17,27 +17,24 @@ class Dice:  # note class names are capitalized
     def __init__(self):
         # TODO change side_up to '1'
         self.side_up = '1'
-
         # TODO change name to roll
+
     def roll(self):
-dice_roll = random.randint(0, 6)
-    if dice_roll = 1:
-            self.side_up = '1'
-    elif dice_roll = 2:
-            self.side_up = '2'
-    elif dice_roll = 3:
-            self.side_up = '3'
-    elif dice_roll = 4:
-            self.side_up = '4'
-    elif dice_roll = 5:
-            self.side_up = '5'
-    elif dice_roll = 6:
-            self.side_up = '6'
-
-
+        if self.dice_roll = random.randint(1, 6) == 1:
+            self.side_up = 1
+        elif self.dice_roll = random.randint(1, 6) == 2:
+            self.side_up = 2
+        elif self.dice_roll = random.randint(1, 6) == 3:
+            self.side_up = 3
+        elif self.dice_roll = random.randint(1, 6) == 4:
+            self.side_up = 4
+        elif self.dice_roll = random.randint(1, 6) == 5:
+            self.side_up = 5
+        else self.dice_roll = random.randint(1, 6) == 6:
+            self.side_up = 6
+        return self.dice_roll
     def get_num_up(self):
-        return self.side_up
-    
+        return self.dice_roll()
 
 def main():
     # TODO change my_coin to my_dice, my_dice_two and the appropriate class name throughout main
