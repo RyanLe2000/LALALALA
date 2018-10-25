@@ -1,8 +1,3 @@
-"""
-One instance should hold your information and the other two should hold your friends or family members' information.
-Just add information, don't get it from the user.
-Print the data from each object, make sure to format the output for clarity and ease of reading.
-"""
 class person1:
 
     def __init__(self, age, adress, number):
@@ -19,6 +14,8 @@ class person1:
     print(adress)
     print(number)
     print("-----------------------------")
+    
+class person2:
 
     def __init__(self, age, adress, number):
         self.age = age
@@ -34,6 +31,8 @@ class person1:
     print(adress)
     print(number)
     print("-----------------------------")
+    
+class person3:
 
     def __init__(self, age, adress, number):
         self.age = age
@@ -48,21 +47,3 @@ class person1:
     print(age)
     print(adress)
     print(number)
-
-
-"""""
-Meri
-47
-8900 Route 14
-123-456-7890
-----------------------
-Freddy
-75
-123, Elm St
-N/A
------------------------
-Jason
-71
-Camp Crystal Lake
-N/A
-"""""
