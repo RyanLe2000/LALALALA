@@ -14,8 +14,6 @@ class person1:
     print(adress)
     print(number)
     print("-----------------------------")
-    
-class person2:
 
     def __init__(self, age, adress, number):
         self.age = age
@@ -31,8 +29,6 @@ class person2:
     print(adress)
     print(number)
     print("-----------------------------")
-    
-class person3:
 
     def __init__(self, age, adress, number):
         self.age = age
@@ -47,3 +43,4 @@ class person3:
     print(age)
     print(adress)
     print(number)
+
