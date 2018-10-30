@@ -1,28 +1,83 @@
-"""
-Starting with player 1, each player gets a turn at answering 5 trivia questions. 
-(There should be a total of 10 questions.) When a question is displayed, 4 possible answers are also displayed.
-Only one of the answers is correct, and if the player selects the correct answer, he or she earns a point. 
-After answers have been selected for all the questions, the program displays the number of points earned by 
-each player and declares the player with the highest number of points the winner.
-To create this program, write a Question class to hold the data for the trivia question. 
-The question class should have attributes for the following data:
-"""
 import question
 
-def main()
+def main():
+
+    q1 = question.Question("What is the most hated thing in the world? ", "A. Burgers", "B. Jeans", "C. Dabbers", "D. Fidget Spinners", "C")
+    q2 = question.Question("What is the most greatest thing in the world? ", "A. puppies", "B. Peace", "C. War", "D. Family", "D")
+    q3 = question.Question("When did the fool say to the man?? ", "A. Hey man hows it going", "B. Gottem", "C. Its just a prank", "D. Fooled ya", "A")
+    q4 = question.Question("Whats the brightest? ", "A. ", "B. White", "C. Optimistic girl", "D. Albert Ainstein", "D")
+
+    player1 = 0
+    player2 = 0
+
+    set_1 = [q1, q2]
+
+    set_2 = [q3, q4]
+
+    print("Player 1: ")
+    for query in set_1:
+        print("\n")
+        print(query.get_question())
+        print(query.get_a1())
+        print(query.get_a2())
+        print(query.get_a3())
+        print(query.get_a4())
+        guess = input("Please enter the letter of the correct answer: ")
+        if guess.upper() == query.get_answer():
+            print("right you has")
+            player1 += 1
+
+        print("player 1 warned: " + str(player1) + " points")
+
+    print("Player 2: ")
+    for query in set_1:
+        print("\n")
+        print(query.get_question())
+        print(query.get_a1())
+        print(query.get_a2())
+        print(query.get_a3())
+        print(query.get_a4())
+        guess = input("Please enter the letter of the correct answer: ")
+        if guess.upper() == query.get_answer():
+            print("right you has")
+            player2 += 1
+
+        print("player 2 warned: " + str(player2) + " points")
+
+    print("Player 1: ")
+    for query in set_2:
+        print("\n")
+        print(query.get_question())
+        print(query.get_a1())
+        print(query.get_a2())
+        print(query.get_a3())
+        print(query.get_a4())
+        guess = input("Please enter the letter of the correct answer: ")
+        if guess.upper() == query.get_answer():
+            print("right you has")
+            player1 += 1
+
+        print("Player 2: ")
+    for query in set_2:
+        print("\n")
+        print(query.get_question())
+        print(query.get_a1())
+        print(query.get_a2())
+        print(query.get_a3())
+        print(query.get_a4())
+        guess = input("Please enter the letter of the correct answer: ")
+        if guess.upper() == query.get_answer():
+            print("right you has")
+            player2 += 1
+
+        print("player 2 warned: " + str(player2) + " points")
+
+    if player2 > player1:
+        print("Player2 wins")
+    elif player2 is player1:
+        print("player 1 and 2 wins")
+    else:
+        print("player 1 wins")
 
 
-"""
-A trivia question
-Possible answer 1
-Possible answer 2
-Possible answer 3
-Possible answer 4
-The number of the correct answer (1, 2, 3, or 4)
-The Question class should also have an appropriate __init__ method, accessors, and mutators. 
-
-The program should have a list or a dictionary containing 10 Question Objects, one for each trivia question. 
-Make up your own trivia question on the subject or subjects of your choice for the objects.
-
-Quiz Program
-"""
+main()
