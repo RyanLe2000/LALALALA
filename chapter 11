@@ -12,7 +12,7 @@
 
 import Automobile
 # create the class Dwelling, the __init__ method should accept number_of_rooms, square_feet, floors
-class dwelling:
+class Dwelling:
     def __int__(self, rooms, feet, floors):
 
           self.__rooms = rooms
@@ -44,10 +44,10 @@ class dwelling:
 
 # Create the class Single_family_home as a sub class of Dwelling
 # The __init__ method should accept number_of_rooms, square_feet, floors, garage_type, yard_size
-class single_family_home(dwelling):
+class single_family_home(Dwelling):
     def __int__(self, rooms, feet, floors, garage_type, yard_size):
 # call the superclass of Dwelling and pass the required arguments, remember to include self
-    dwelling __int__(self, rooms, feet, floors, garage_type, yard_size)
+    Dwelling __int__(self, rooms, feet, floors, garage_type, yard_size)
 # initialize the garage_type and yard_size attributes
     def set_garage_type(self, garage_type):
         self.__garage_type = garage_type
