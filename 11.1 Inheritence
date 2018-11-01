@@ -1,6 +1,28 @@
 import class
 class parent:
-  def __int__(self, desk, chair, filing cabinet):
+  def __int__(self, material, length, width, height, and price):
+  
+  
+  
+    def set_matierial(self, materials):
+      self.__mateiral = mateiral
+  
+  
+    def get_material(self):
+      return self.__material
+    def get_length(self):
+      return self.__length
+    def get_width(self):
+      return self.__width
+    def get_height(self):
+      return self.__height
+    def get_price(self)
+      return self.__price
+    
+    
+    
+    def __str__(self):
+      line_item = self.__product + 
   
   
 class desk(parent):
