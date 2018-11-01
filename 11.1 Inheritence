@@ -1,0 +1,6 @@
+import class
+class parent:
+  def __int__(self, desk, chair, filing cabinet):
+  
+  
+class desk(parent):
