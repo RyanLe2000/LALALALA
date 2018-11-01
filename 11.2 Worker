@@ -1,0 +1,7 @@
+import employee
+class Employee:
+  def __int__(self, name, number):
+    self.__name = name
+    self.__number = number
+class ProductionWorker(Employee):
+  
