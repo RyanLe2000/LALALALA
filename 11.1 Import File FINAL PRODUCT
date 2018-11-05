@@ -1,0 +1,22 @@
+import parent
+
+def main():
+    leftdesk = Parent.leftdesk("Maple wood desk, 2 drawers, 15ft high, 5ft wide")
+
+    print("item: " + leftdesk.get_product())
+    print("Material: " + str(leftdesk.get_material())
+    print("price: " + "($(,.2f)".format(leftdesk.get_price)))
+    
+    print leftdesk
+    
+    
+    
+    rightdesk = Parent.leftdesk("Maple wood desk, 2 drawers, 15ft high, 5ft wide")
+
+    print("item: " + rightdesk.get_product())
+    print("Material: " + str(rightdesk.get_material()))
+    print("price: " + "($(,.2f)".format(rightdesk.get_price))
+    
+    print rightdesk
+    
+main()
