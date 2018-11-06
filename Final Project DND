@@ -1,5 +1,19 @@
 def main():
-
+  print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
+  Str =
+  Dex =
+  Con =
+  Wis =
+  Int =
+  Cha =
+  Str_mod = 0
+  Dex_mod = 0
+  Con_mod = 0
+  Wis_mod = 0
+  Int_mod = 0
+  Cha_mod = 0
+  if Str is 8:
+    Str_mod = 
 
 
 
