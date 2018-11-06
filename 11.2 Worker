@@ -1,7 +1,25 @@
-import employee
 class Employee:
-  def __int__(self, name, number):
-    self.__name = name
-    self.__number = number
+    def __int__(self, name, number):
+        self.__name = name
+        self.__number = number
+
+
 class ProductionWorker(Employee):
-  
+    def __int__(self, rate, shift):
+
+        def set_rate(self, rate):
+            self.__rate = rate
+
+        def set_shift(self, shift):
+            self.__shift = shift
+
+        def get_rate(self):
+            return self.__rate
+
+        def get_shift(self):
+            return self.__shift
+
+    print('Brian')
+    print('Employee Number')
+    print('pay rate:', get_rate())
+    print('shift:', get_shift())
