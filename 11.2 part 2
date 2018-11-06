@@ -1,0 +1,19 @@
+class ProductionWorker:
+    def __int__(self, rate, shift):
+
+        def set_rate(self, rate):
+            self.__rate = int(input(" Hourly pay rate"))
+
+        def set_shift(self, shift):
+            self.__shift = int(input(" Which shift "))
+
+        def get_rate(self):
+            return self.__rate
+
+        def get_shift(self):
+            return self.__shift
+
+    print(input('insert Name'))
+    print(input('insert number of employee'))
+    print('rate:', get_rate())
+    print('shift:',get_shift())
