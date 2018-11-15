@@ -45,6 +45,10 @@ print("Would you like Information what each ability does? Yes or No")
 
 
 
+my_set = {1, 2, 3, 4, 5}
+
+
+my_set.add(6)my_set.update([6, 7, 8])
 
 
 
@@ -53,7 +57,100 @@ print("Would you like Information what each ability does? Yes or No")
 
 
 
+main()
 
+
+"""
+    Create a CRUD application with a GUI interface
+"""
+
+import pickle
+import tkinter
+import tkinter.messagebox
+
+
+class CrudGUI:
+    def __init__(self, master, cust):
+        self.master = master
+        self.master.title('Welcome Menu')
+        self.customer_list = cust
+        self.radio_var = 0
+
+        self.top_frame = tkinter.Frame(self.master)
+        self.bottom_frame = tkinter.Frame(self.master)
+
+        self.radio_var = tkinter.IntVar()
+        self.radio_var.set(1)
+
+        # create radio buttons
+
+        self.start = tkinter.Radiobutton(self.top_frame, text="Create Character", variable=self.radio_var, value=1)
+        self.tutorial = tkinter.Radiobutton(self.top_frame, text="Tutorial", variable=self.radio_var, value=2)
+
+        self.start.pack(anchor='w', padx=20)
+        self.tutorial.pack(anchor='w', padx=20)
+
+        # create ok and quit buttons
+
+        self.ok_button = tkinter.Button(self.bottom_frame, text="OK", command=self.open_menu)
+        self.quit_button = tkinter.Button(self.bottom_frame, text="QUIT", command=self.master.destroy)
+
+        # pack buttons
+        self.ok_button.pack(side='left')
+        self.quit_button.pack(side='left')
+
+        # pack the frames
+        self.top_frame.pack()
+        self.bottom_frame.pack()
+
+    def open_menu(self):
+        if self.radio_var.get() == 1:
+            look_up = LookGUI()
+        else:
+
+            tkinter.messagebox.showinfo("Hey Listen", "You have selected something not yet implemented!")
+
+
+class LookGUI:
+    def __init__(self):
+        self.main_window = tkinter.Tk()
+        self.top_frame = tkinter.Frame(self.main_window)
+        self.bottom_frame = tkinter.Frame(self.main_window)
+
+        # widgets for top frame
+        self.search_label = tkinter.Label(self.top_frame, text='Enter stats: ')
+        self.search_entry = tkinter.Entry(self.top_frame, width=15)
+
+        # pack top frame
+        self.search_label.pack(side='left')
+        self.search_entry.pack(side='left')
+
+        # buttons for bottom frame
+        self.search_button = tkinter.Button(self.bottom_frame, text='Search', command=self.search)
+        self.quit_button = tkinter.Button(self.bottom_frame, text='QUIT', command=self.main_window.destroy)
+
+        # pack bottom frame
+        self.search_button.pack(side='left')
+        self.quit_button.pack(side='left')
+
+        # pack frames
+        self.top_frame.pack()
+        self.bottom_frame.pack()
+
+    def search(self):
+        tkinter.messagebox.showinfo("Hey Listen", "Magic happens here!")
+
+
+def main():
+    try:
+        input_file = open("customer_file.dat", 'rb')
+        customers = pickle.load(input_file)
+    except(FileNotFoundError, IOError):
+        customers = {}
+
+    root = tkinter.Tk()
+    menu_gui = CrudGUI(root, customers)
+    root.mainloop()
 
 
 main()
