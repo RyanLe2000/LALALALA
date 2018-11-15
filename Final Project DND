@@ -1,22 +1,46 @@
 def main():
   print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
-  Str =
-  Dex =
-  Con =
-  Wis =
-  Int =
-  Cha =
+  Str = int(input("Place your Strength Ability Score")
+  Dex = int(input("Place your Strength Ability Score")
+  Con = int(input("Place your Strength Ability Score")
+  Wis = int(input("Place your Strength Ability Score")
+  Int = int(input("Place your Strength Ability Score")
+  Cha = int(input("Place your Strength Ability Score")
   Str_mod = 0
   Dex_mod = 0
   Con_mod = 0
   Wis_mod = 0
   Int_mod = 0
   Cha_mod = 0
+  
   if Str is 8:
-    Str_mod = 
+    Str_mod = -1
+  elif Str is 10:
+    Str_mod = 0
+  elif Str is 12
+    Str_mod = 1
+  elif Str is 14
+    Str_mod = 2
+  elif Str is 16
+    Str_mod = 3
+  else:
+    print("Not a valid number, Choose from the following above")
+    
+  if Str is 8:
+    Str_mod = -1
+  elif Str is 10:
+    Str_mod = 0
+  elif Str is 12
+    Str_mod = 1
+  elif Str is 14
+    Str_mod = 2
+  elif Str is 16
+    Str_mod = 3
+  else:
+    print("Not a valid number, Choose from the following above")
+    
 
-
-
+print("Would you like Information what each ability does? Yes or No")
 
 
 
