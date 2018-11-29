@@ -1,105 +1,101 @@
 def main():
   print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
-  Str = int(input("Place your Strength Ability Score")
-  Dex = int(input("Place your Strength Ability Score")
-  Con = int(input("Place your Strength Ability Score")
-  Wis = int(input("Place your Strength Ability Score")
-  Int = int(input("Place your Strength Ability Score")
-  Cha = int(input("Place your Strength Ability Score")
+  Str = int(input("Place your Strength Ability Score"))
+  Dex = int(input("Place your Strength Ability Score"))
+  Con = int(input("Place your Strength Ability Score"))
+  Wis = int(input("Place your Strength Ability Score"))
+  Int = int(input("Place your Strength Ability Score"))
+  Cha = int(input("Place your Strength Ability Score"))
   Str_mod = 0
   Dex_mod = 0
   Con_mod = 0
   Wis_mod = 0
   Int_mod = 0
   Cha_mod = 0
-  
+
   if Str is 8:
     Str_mod = -1
   elif Str is 10:
     Str_mod = 0
-  elif Str is 12
+  elif Str is 12:
     Str_mod = 1
-  elif Str is 14
+  elif Str is 14:
     Str_mod = 2
-  elif Str is 16
+  elif Str is 16:
     Str_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
-    
+
   if Dex is 8:
     Dex_mod = -1
   elif Dex is 10:
     Dex_mod = 0
-  elif Dex is 12
+  elif Dex is 12:
     Dex_mod = 1
-  elif Dex is 14
+  elif Dex is 14:
     Dex_mod = 2
-  elif Dex is 16
+  elif Dex is 16:
     Dex_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
-    
+
   if Con is 8:
     Con_mod = -1
   elif Con is 10:
     Con_mod = 0
-  elif Con is 12
+  elif Con is 12:
     Con_mod = 1
-  elif Con is 14
+  elif Con is 14:
     Con_mod = 2
-  elif Con is 16
+  elif Con is 16:
     Con_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
-    
+
   if Wis is 8:
     Wis_mod = -1
   elif Wis is 10:
     Wis_mod = 0
-  elif Wis is 12
+  elif Wis is 12:
     Wis_mod = 1
-  elif Wis is 14
+  elif Wis is 14:
     Wis_mod = 2
-  elif Wis is 16
+  elif Wis is 16:
     Wis_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
-    
+
   if Int is 8:
     Int_mod = -1
   elif Int is 10:
     Int_mod = 0
-  elif Int is 12
+  elif Int is 12:
     Int_mod = 1
-  elif Int is 14
+  elif Int is 14:
     Int_mod = 2
-  elif Int is 16
+  elif Int is 16:
     Int_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
-    
+
   if Cha is 8:
     Cha_mod = -1
   elif Cha is 10:
     Cha_mod = 0
-  elif Cha is 12
+  elif Cha is 12:
     Cha_mod = 1
-  elif Cha is 14
+  elif Cha is 14:
     Cha_mod = 2
-  elif Cha is 16
+  elif Cha is 16:
     Cha_mod = 3
   else:
     print("Not a valid number, Choose from the following above")
- 
- 
-
-print(input("Would you like Information what each ability does? Yes or No"))
 
 
+Info = print(input("Would you like Information what each ability does? Yes or No"))
+    if Yes = Info:
+        print('stuff')
 
-
-my_set = {}
-my_set.add(6)my_set.update([])
 
 
 main()
