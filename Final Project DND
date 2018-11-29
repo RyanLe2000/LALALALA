@@ -146,28 +146,51 @@ class CrudGUI:
 
     def open_menu(self):
         if self.radio_var.get() == 1:
-            look_up = LookGUI()
+            look_up = StatsGUI()
         else:
 
             tkinter.messagebox.showinfo("Hey Listen", "You have selected something not yet implemented!")
 
-
-class LookGUI:
+class StatsGUI:
     def __init__(self):
         self.main_window = tkinter.Tk()
         self.top_frame = tkinter.Frame(self.main_window)
         self.bottom_frame = tkinter.Frame(self.main_window)
 
+
         # widgets for top frame
-        self.search_label = tkinter.Label(self.top_frame, text='Enter stats: ')
-        self.search_entry = tkinter.Entry(self.top_frame, width=15)
+        tkinter.messagebox.showinfo("Distribute ability scoreS: 16,14,12,12,10,8")
+        self.str_label = tkinter.Label(self.top_frame, text='Enter str: ')
+        self.str_entry = tkinter.Entry(self.top_frame, width=15)
+        self.dex_label = tkinter.Label(self.top_frame, text='Enter dex: ')
+        self.dex_entry = tkinter.Entry(self.top_frame, width=15)
+        self.con_label = tkinter.Label(self.top_frame, text='Enter con: ')
+        self.con_entry = tkinter.Entry(self.top_frame, width=15)
+        self.int_label = tkinter.Label(self.top_frame, text='Enter int: ')
+        self.int_entry = tkinter.Entry(self.top_frame, width=15)
+        self.wis_label = tkinter.Label(self.top_frame, text='Enter wis: ')
+        self.wis_entry = tkinter.Entry(self.top_frame, width=15)
+        self.cha_label = tkinter.Label(self.top_frame, text='Enter cha: ')
+        self.cha_entry = tkinter.Entry(self.top_frame, width=15)
+
 
         # pack top frame
-        self.search_label.pack(side='left')
-        self.search_entry.pack(side='left')
+        self.str_label.pack(side='left')
+        self.str_entry.pack(side='left')
+        self.con_label.pack(side='left')
+        self.con_entry.pack(side='left')
+        self.int_label.pack(side='left')
+        self.int_entry.pack(side='left')
+        self.wis_label.pack(side='left')
+        self.wis_entry.pack(side='left')
+        self.cha_label.pack(side='left')
+        self.cha_entry.pack(side='left')
+        self.dex_label.pack(side='left')
+        self.dex_entry.pack(side='left')
+
 
         # buttons for bottom frame
-        self.search_button = tkinter.Button(self.bottom_frame, text='Search', command=self.search)
+        self.search_button = tkinter.Button(self.bottom_frame, text='Complete', command=self.search)
         self.quit_button = tkinter.Button(self.bottom_frame, text='QUIT', command=self.main_window.destroy)
 
         # pack bottom frame
@@ -179,7 +202,12 @@ class LookGUI:
         self.bottom_frame.pack()
 
     def search(self):
-        tkinter.messagebox.showinfo("Hey Listen", "Magic happens here!")
+        print(self.str_entry)
+        print(self.dex_entry)
+        print(self.con_entry)
+        print(self.int_entry)
+        print(self.wis_entry)
+        print(self.cha_entry)
 
 
 def main():
