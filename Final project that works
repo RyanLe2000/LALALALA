@@ -1,108 +1,122 @@
-def main():
-    print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
-    Str = print(int(input("Place your Strength Ability Score ")))
-    Dex = print(int(input("Place your Strength Ability Score ")))
-    Con = print(int(input("Place your Strength Ability Score ")))
-    Wis = print(int(input("Place your Strength Ability Score ")))
-    Int = print(int(input("Place your Strength Ability Score ")))
-    Cha = print(int(input("Place your Strength Ability Score ")))
+print("Welcome to the Dungeon and Dragons Creation, You will be choosing a class, race, and placing your ability scores")
+print("---------Class--------")
+print("Choose the number from the following list for your class: ")
+print("1) Ranger: Cuts the air with arrows from afar")
+print("2) Warrior: Bashes enemys with superior melee power")
+print("3) Mage: Casts magical spells to annihilate enemys as well as support allys")
+print("4) Healer: Provides medical support as well as additional buffs and debuffs")
+class_choose = (int(input("")))
+if class_choose is 1:
+    print("You have whissed the Ranger")
+elif class_choose is 2:
+    print("You have charged the Warrior")
+elif class_choose is 3:
+    print("You have summoned the Mage")
+elif class_choose is 4:
+    print("You have summoned the Healer")
 
+    
+print("--------------Ability Scores-----------")
+print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
+Str = (int(input("Place your Strength Ability Score ")))
+Dex = (int(input("Place your Dexterity Ability Score ")))
+Con = (int(input("Place your Constitution Ability Score ")))
+Wis = (int(input("Place your Wisdom Ability Score ")))
+Int = (int(input("Place your Intelligence Ability Score ")))
+Cha = (int(input("Place your Charisma Ability Score ")))
+
+Str_mod = 0
+Dex_mod = 0
+Con_mod = 0
+Wis_mod = 0
+Int_mod = 0
+Cha_mod = 0
+
+if Str is 8:
+    Str_mod = -1
+elif Str is 10:
     Str_mod = 0
+elif Str is 12:
+    Str_mod = 1
+elif Str is 14:
+    Str_mod = 2
+elif Str is 16:
+    Str_mod = 3
+else:
+   print("Not a valid number, Choose from the following above")
+
+
+if Dex is 8:
+    Dex_mod = -1
+elif Dex is 10:
     Dex_mod = 0
+elif Dex is 12:
+    Dex_mod = 1
+elif Dex is 14:
+    Dex_mod = 2
+elif Dex is 16:
+    Dex_mod = 3
+else:
+    print("Not a valid number, Choose from the following above")
+
+
+if Con is 8:
+    Con_mod = -1
+elif Con is 10:
     Con_mod = 0
+elif Con is 12:
+    Con_mod = 1
+elif Con is 14:
+    Con_mod = 2
+elif Con is 16:
+    Con_mod = 3
+else:
+    print("Not a valid number, Choose from the following above")
+
+
+if Wis is 8:
+    Wis_mod = -1
+elif Wis is 10:
     Wis_mod = 0
+elif Wis is 12:
+    Wis_mod = 1
+elif Wis is 14:
+    Wis_mod = 2
+elif Wis is 16:
+    Wis_mod = 3
+else:
+    print("Not a valid number, Choose from the following above")
+
+
+if Int is 8:
+    Int_mod = -1
+elif Int is 10:
     Int_mod = 0
+elif Int is 12:
+    Int_mod = 1
+elif Int is 14:
+    Int_mod = 2
+elif Int is 16:
+    Int_mod = 3
+else:
+    print("Not a valid number, Choose from the following above")
+
+if Cha is 8:
+    Cha_mod = -1
+elif Cha is 10:
     Cha_mod = 0
+elif Cha is 12:
+    Cha_mod = 1
+elif Cha is 14:
+    Cha_mod = 2
+elif Cha is 16:
+    Cha_mod = 3
+else:
+    print("Not a valid number, Choose from the following above")
 
-    if Str is 8:
-        Str_mod = -1
-    elif Str is 10:
-        Str_mod = 0
-    elif Str is 12:
-        Str_mod = 1
-    elif Str is 14:
-        Str_mod = 2
-    elif Str is 16:
-        Str_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-print(Str_mod)
-        
-    if Dex is 8:
-        Dex_mod = -1
-    elif Dex is 10:
-        Dex_mod = 0
-    elif Dex is 12:
-        Dex_mod = 1
-    elif Dex is 14:
-        Dex_mod = 2
-    elif Dex is 16:
-        Dex_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-    print(Dex_mod)
-    
-    if Con is 8:
-        Con_mod = -1
-    elif Con is 10:
-        Con_mod = 0
-    elif Con is 12:
-        Con_mod = 1
-    elif Con is 14:
-        Con_mod = 2
-    elif Con is 16:
-        Con_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-    print(Con_mod)
-    
-    if Wis is 8:
-        Wis_mod = -1
-    elif Wis is 10:
-        Wis_mod = 0
-    elif Wis is 12:
-        Wis_mod = 1
-    elif Wis is 14:
-        Wis_mod = 2
-    elif Wis is 16:
-        Wis_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-    print(Wis_mod)
-
-    if Int is 8:
-        Int_mod = -1
-    elif Int is 10:
-        Int_mod = 0
-    elif Int is 12:
-        Int_mod = 1
-    elif Int is 14:
-        Int_mod = 2
-    elif Int is 16:
-        Int_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-    print(Int_mod)
-
-    if Cha is 8:
-        Cha_mod = -1
-    elif Cha is 10:
-        Cha_mod = 0
-    elif Cha is 12:
-        Cha_mod = 1
-    elif Cha is 14:
-        Cha_mod = 2
-    elif Cha is 16:
-        Cha_mod = 3
-    else:
-        print("Not a valid number, Choose from the following above")
-    
-    print(Cha_mod)
-
-
-main()
+print("Your modifier for Str is ", Str_mod)
+print("Your modifier for Dex is ", Dex_mod)
+print("Your modifier for Con is ", Con_mod)
+print("Your modifier for Wis is ", Wis_mod)
+print("Your modifier for Int is ", Int_mod)
+print("Your modifier for Cha is ", Cha_mod)
