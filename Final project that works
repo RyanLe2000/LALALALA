@@ -1,4 +1,6 @@
 print("Welcome to the Dungeon and Dragons Creation, You will be choosing a class, race, and placing your ability scores")
+name_guy = (str(input("Tell us the name of your character ")))
+print("Lets get you set up ", name_guy)
 print("---------Class--------")
 print("Choose the number from the following list for your class: ")
 print("1) Ranger: Cuts the air with arrows from afar")
@@ -176,3 +178,5 @@ print("Your modifier for Con is ", Con_mod)
 print("Your modifier for Wis is ", Wis_mod)
 print("Your modifier for Int is ", Int_mod)
 print("Your modifier for Cha is ", Cha_mod)
+
+print("You are ready for battle, go forth ", name_guy, " The ", class_class)
