@@ -6,16 +6,75 @@ print("2) Warrior: Bashes enemys with superior melee power")
 print("3) Mage: Casts magical spells to annihilate enemys as well as support allys")
 print("4) Healer: Provides medical support as well as additional buffs and debuffs")
 class_choose = (int(input("")))
+
 if class_choose is 1:
     print("You have whissed the Ranger")
+    inventory_set = {'Long Bow', '20 arrows', 'Dagger'}
+    print('You have the following equipment ', inventory_set)
+    class_class = str("Ranger")
 elif class_choose is 2:
     print("You have charged the Warrior")
+    inventory_set = {'Sword and Shield', 'Great Sword', 'Grappling Hook'}
+    print('You have the following equipment ', inventory_set)
+    class_class = str("Warrior")
 elif class_choose is 3:
     print("You have summoned the Mage")
+    inventory_set = {'Magical Staff', 'Dagger', 'Fire Bomb Scroll'}
+    print('You have the following equipment ', inventory_set)
+    class_class = str("Mage")
 elif class_choose is 4:
     print("You have summoned the Healer")
+    inventory_set = {'Healing Staff', 'Short Sword', 'Potion of Healing'}
+    print('You have the following equipment ', inventory_set)
+    class_class = str("Healer")
+else:
+    print("invalid number, try again")
 
-    
+
+print('----------------Race-------------')
+print("Choose your race, each race gives special benifits")
+print("1) Human, Increases all stats by 1 modifyer point - No Special Benifits")
+print("2) Elf, Increases dexerity and Charisma by 2 modifyer points - Increase Sight Range / Night Vision")
+print("3) Orc, Increases strength by 3 modifyer points - Beserk Ability / Can dual Wield")
+print("4) Dwarf, Increase Intelligence and Wisdom by 2 modifyer points - Small Size / Able to Craft More items")
+race_choose = int(input(""))
+Str_mod = 0
+Dex_mod = 0
+Con_mod = 0
+Wis_mod = 0
+Int_mod = 0
+Cha_mod = 0
+
+if race_choose is 1:
+    print("You have Chosen the Human")
+    Str_mod += 1
+    Dex_mod += 1
+    Con_mod += 1
+    Wis_mod += 1
+    Int_mod += 1
+    Cha_mod += 1
+    race_benifits = str('None')
+    race = str("Human")
+elif race_choose is 2:
+    print("You have Chosen the Elf")
+    Dex_mod += 2
+    Cha_mod += 2
+    race_benifits = str('Increase Sight Range / Night Vision')
+    race = str("Elf")
+elif race_choose is 3:
+    print("You have Chosen the Orc")
+    Str_mod += 4
+    race_benifits = str('Ability to Deal Double Damage')
+    race = str("Orc")
+elif race_choose is 2:
+    print("You have Chosen the Dwarf")
+    Wis_mod += 2
+    Int_mod += 2
+    race_benifits = str('Small Size / Able to Craft More items')
+    race = str("Dwarf")
+else:
+    print("Not a valid race, Restart and Try Again")
+
 print("--------------Ability Scores-----------")
 print("Distribute the following numbers to each ability score: 16,14,12,12,10,8")
 Str = (int(input("Place your Strength Ability Score ")))
@@ -25,95 +84,92 @@ Wis = (int(input("Place your Wisdom Ability Score ")))
 Int = (int(input("Place your Intelligence Ability Score ")))
 Cha = (int(input("Place your Charisma Ability Score ")))
 
-Str_mod = 0
-Dex_mod = 0
-Con_mod = 0
-Wis_mod = 0
-Int_mod = 0
-Cha_mod = 0
-
 if Str is 8:
-    Str_mod = -1
+    Str_mod += -1
 elif Str is 10:
-    Str_mod = 0
+    Str_mod += 0
 elif Str is 12:
-    Str_mod = 1
+    Str_mod += 1
 elif Str is 14:
-    Str_mod = 2
+    Str_mod += 2
 elif Str is 16:
-    Str_mod = 3
+    Str_mod += 3
 else:
    print("Not a valid number, Choose from the following above")
 
 
 if Dex is 8:
-    Dex_mod = -1
+    Dex_mod += -1
 elif Dex is 10:
-    Dex_mod = 0
+    Dex_mod += 0
 elif Dex is 12:
-    Dex_mod = 1
+    Dex_mod += 1
 elif Dex is 14:
-    Dex_mod = 2
+    Dex_mod += 2
 elif Dex is 16:
-    Dex_mod = 3
+    Dex_mod += 3
 else:
     print("Not a valid number, Choose from the following above")
 
 
 if Con is 8:
-    Con_mod = -1
+    Con_mod += -1
 elif Con is 10:
-    Con_mod = 0
+    Con_mod += 0
 elif Con is 12:
-    Con_mod = 1
+    Con_mod += 1
 elif Con is 14:
-    Con_mod = 2
+    Con_mod += 2
 elif Con is 16:
-    Con_mod = 3
+    Con_mod += 3
 else:
     print("Not a valid number, Choose from the following above")
 
 
 if Wis is 8:
-    Wis_mod = -1
+    Wis_mod += -1
 elif Wis is 10:
-    Wis_mod = 0
+    Wis_mod += 0
 elif Wis is 12:
-    Wis_mod = 1
+    Wis_mod += 1
 elif Wis is 14:
-    Wis_mod = 2
+    Wis_mod += 2
 elif Wis is 16:
-    Wis_mod = 3
+    Wis_mod += 3
 else:
     print("Not a valid number, Choose from the following above")
 
 
 if Int is 8:
-    Int_mod = -1
+    Int_mod += -1
 elif Int is 10:
-    Int_mod = 0
+    Int_mod += 0
 elif Int is 12:
-    Int_mod = 1
+    Int_mod += 1
 elif Int is 14:
-    Int_mod = 2
+    Int_mod += 2
 elif Int is 16:
-    Int_mod = 3
+    Int_mod += 3
 else:
     print("Not a valid number, Choose from the following above")
 
 if Cha is 8:
-    Cha_mod = -1
+    Cha_mod += -1
 elif Cha is 10:
-    Cha_mod = 0
+    Cha_mod += 0
 elif Cha is 12:
-    Cha_mod = 1
+    Cha_mod += 1
 elif Cha is 14:
-    Cha_mod = 2
+    Cha_mod += 2
 elif Cha is 16:
-    Cha_mod = 3
+    Cha_mod += 3
 else:
     print("Not a valid number, Choose from the following above")
 
+print("-----------Completion Results----------------")
+print("Your a ", race, class_class)
+print("You start out with the following: ", inventory_set)
+print("Special Abilitys", race_benifits)
 print("Your modifier for Str is ", Str_mod)
 print("Your modifier for Dex is ", Dex_mod)
 print("Your modifier for Con is ", Con_mod)
